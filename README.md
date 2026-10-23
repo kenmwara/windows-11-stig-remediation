@@ -1,3 +1,5 @@
+<!-- banner --><a href="https://github.com/kenmwara"><img src="https://raw.githubusercontent.com/kenmwara/kenmwara/main/assets/brand/card-stig.png?v=689843e4" width="100%" alt="Windows 11 STIG: Ten DISA STIG findings on a Windows 11 lab VM, each remediated with PowerShell and verified by a credentialed compliance scan. 10/10 failed → passed."></a>
+
 # Windows 11 STIG remediation
 
 Ten DISA STIG findings on a Windows 11 Pro 25H2 lab VM in Azure, each remediated with PowerShell and verified with a
