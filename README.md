@@ -37,7 +37,7 @@ computer against the checklist.
 3. Run the script as Administrator on the VM.
 4. Rescan with the same scan and confirm the finding moved from Failed to Passed.
 
-## What I learned
+## Lessons learned
 
 - **A scanner's check can be stricter than the STIG text.** WN11-AU-000505 asks for a Security log that holds "one
   week" of records; the Tenable audit enforces at least 5120000 KB. The first fix (1024000 KB) failed the rescan.
@@ -46,7 +46,7 @@ computer against the checklist.
 - **Credentialed scanning of a standalone Windows 11 VM** needs the scanner allowed through the firewall, Remote
   Registry available, and remote UAC filtering relaxed for the local admin account during the scan. All of it was
   put back afterwards.
-- **Audit settings are telemetry.** Process Creation auditing (event 4688) and script block logging (event 4104)
+- **Audit settings are the evidence trail.** Process Creation auditing (event 4688) and script block logging (event 4104)
   record exactly the evidence a threat hunt depends on.
 
 ## Using the scripts
