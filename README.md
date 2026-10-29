@@ -2,14 +2,17 @@
 
 # Windows 11 STIG remediation
 
-Ten DISA STIG findings on a Windows 11 Pro 25H2 lab VM in Azure, each remediated with PowerShell and verified with a
-credentialed Tenable compliance scan: **failed before, passed after**.
+**Ten security settings on a Windows 11 computer, fixed and proven: each one failed the official US government
+checklist before, and passed after.**
 
-- **Benchmark:** DISA Microsoft Windows 11 STIG v2r9, run as a Tenable Vulnerability Management compliance audit inside a
-  credentialed Advanced Network Scan.
-- **Target:** one Azure lab VM (Windows 11 Pro 25H2), part of the LOG(N) Pacific Cyber Range.
-- **Baseline:** 258 checks, 142 failed, 11 warnings, 105 passed (27 Sep 2026, 12:15 PM PT).
-- **After remediation:** 131 failed, 11 warnings, 116 passed. All ten targeted findings pass.
+The checklist is the DISA STIG for Windows 11, the security standard the US Department of Defense uses for its
+computers. Each setting was fixed with a PowerShell script and confirmed by a Tenable scan that logs in and checks the
+computer against the checklist.
+
+- **Checklist:** DISA Microsoft Windows 11 STIG v2r9, run as a Tenable compliance scan.
+- **Target:** one Windows 11 Pro 25H2 virtual machine in Azure, part of the LOG(N) Pacific Cyber Range.
+- **Before:** 258 checks, 142 failed, 11 warnings, 105 passed (27 Sep 2026, 12:15 PM PT).
+- **After:** 131 failed, 11 warnings, 116 passed. All ten targeted settings pass.
 
 ## The ten
 
