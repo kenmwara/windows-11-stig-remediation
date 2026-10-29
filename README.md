@@ -14,7 +14,11 @@ computer against the checklist.
 - **Before:** 258 checks, 142 failed, 11 warnings, 105 passed (27 Sep 2026, 12:15 PM PT).
 - **After:** 131 failed, 11 warnings, 116 passed. All ten targeted settings pass.
 
-## The ten
+## The ten settings
+
+<img src="images/the-ten.png" width="100%" alt="Ten settings that failed the checklist, each fixed and passed. Each one was fixed with a PowerShell script, then a Tenable scan logged in and checked it again. All ten moved from Failed to Passed. Record every program started: Windows logs each program that runs. Proof: Failed before; passed on the rescan Detailed audit rules win: The fine-grained logging rules override the broad ones. Proof: Failed before; passed on the rescan Bigger app log: The application log holds at least 32 MB. Proof: Failed before; passed on the rescan Bigger security log: The security log keeps a week of records (5 GB in this scan). Proof: Failed before; passed on the rescan Bigger system log: The system log holds at least 32 MB. Proof: Failed before; passed on the rescan Memory attack protection: A Windows defence against a common crash-and-hijack trick (SEHOP) is on. Proof: Failed before; passed on the rescan No 'run as someone else': The Secondary Logon service is switched off. Proof: Failed before; passed on the rescan No camera on the lock screen: The camera can't be used before signing in. Proof: Failed before; passed on the rescan No passwords kept in memory: WDigest, an old login method that leaves passwords readable, is off. Proof: Failed before; passed on the rescan Record every PowerShell script: The full text of each script that runs is logged. Proof: Failed before; passed on the rescan">
+
+<details><summary>The ten as a table, with checklist IDs and scripts</summary>
 
 | STIG ID | Finding | Before | After | Script |
 |---|---|---|---|---|
@@ -28,6 +32,8 @@ computer against the checklist.
 | WN11-CC-000005 | Camera access from the lock screen disabled | Failed | Passed | [WN11-CC-000005.ps1](scripts/WN11-CC-000005.ps1) |
 | WN11-CC-000038 | WDigest authentication disabled | Failed | Passed | [WN11-CC-000038.ps1](scripts/WN11-CC-000038.ps1) |
 | WN11-CC-000326 | PowerShell script block logging enabled | Failed | Passed | [WN11-CC-000326.ps1](scripts/WN11-CC-000326.ps1) |
+
+</details>
 
 ## Method
 
